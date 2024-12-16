@@ -14,12 +14,12 @@ MyWin::MyWin(const int numBtns,
     auto screen  = get_screen();
     screenWidth  = screen->get_width();
     screenHeight = screen->get_height();
-    set_default_size(screenWidth, screenHeight);
   }
   else {
     screenWidth  = width;
     screenHeight = height;
   }
+  set_default_size(screenWidth, screenHeight);
 
   add(fixed);
 
